@@ -10,40 +10,40 @@ public class DemoQaBasePageTest extends BaseTest {
     public void testElementsBtn() {
         BasePage basePage = new BasePage(BASE_URL);
         basePage.clickOnElementsButton();
-        Assert.assertEquals(basePage.elementsPageHeaderText.getText(), "Elements");
+        Assert.assertEquals(basePage.getElementsPageHeaderText().getText(), "Elements");
     }
     @Test
     public void testFormsBtn(){
         BasePage basePage = new BasePage(BASE_URL);
         basePage.clickOnFormsButton();
-        Assert.assertEquals(basePage.formsPageHeaderText.getText(), "Forms");
+        Assert.assertEquals(basePage.getFormsPageHeaderText().getText(), "Forms");
     }
 
     @Test
     public void testWidgetsBtn(){
         BasePage basePage = new BasePage(BASE_URL);
         basePage.clickOnWidgetsButton();
-        Assert.assertEquals(basePage.widgetsPageHeaderText.getText(), "Widgets");
+        Assert.assertEquals(basePage.getWidgetsPageHeaderText().getText(), "Widgets");
     }
 
     @Test
     public void testAlertsFWBtn(){
         BasePage basePage = new BasePage(BASE_URL);
         basePage.clickOnAlertsFWButton();
-        Assert.assertEquals(basePage.alertsFWPageHeaderText.getText(), "Alerts, Frame & Windows");
+        Assert.assertEquals(basePage.getAlertsFWPageHeaderText().getText(), "Alerts, Frame & Windows");
     }
 
     @Test
     public void testInteractionsBtn(){
         BasePage basePage = new BasePage(BASE_URL);
         basePage.clickOnInteractionsButton();
-        Assert.assertEquals(basePage.interactionsPageHeaderText.getText(), "Interactions");
+        Assert.assertEquals(basePage.getInteractionsPageHeaderText().getText(), "Interactions");
     }
     @Test
     public void testBoolStoreAppBtn(){
         BasePage basePage = new BasePage(BASE_URL);
         basePage.clickOnBookStoreAppButton();
-        Assert.assertEquals(basePage.bookStoreAppPageHeaderText.getText(), "Book Store");
+        Assert.assertEquals(basePage.getBookStoreAppPageHeaderText().getText(), "Book Store");
     }
 
 }
