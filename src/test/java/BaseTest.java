@@ -7,17 +7,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 abstract public class BaseTest {
-    public void setUp() {
-        WebDriverManager.chromedriver().setup();
+    @BeforeMethod
+    public void init() {
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1920x1080";
-        Configuration.headless = false; //for browser visibility during test run
-    }
-
-    @BeforeMethod
-    public void init() {
-        setUp();
+        Configuration.headless = false;
     }
 
     @AfterMethod
