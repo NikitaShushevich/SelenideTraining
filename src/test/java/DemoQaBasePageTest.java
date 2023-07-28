@@ -1,13 +1,7 @@
 import Pages.BasePage.BasePage;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
-import com.fasterxml.jackson.databind.ser.Serializers;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.Arrays;
-import java.util.logging.SocketHandler;
 
 public class DemoQaBasePageTest extends BaseTest {
 
